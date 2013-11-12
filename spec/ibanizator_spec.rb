@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Ibanizator do
-  let(:ibanizator) { Ibanizator.new }
+describe Iban::Ibanizator do
+  let(:ibanizator) { Iban::Ibanizator.new }
 
   describe '#calculate_iban' do
     context 'given correct parameters' do
