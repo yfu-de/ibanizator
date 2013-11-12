@@ -44,12 +44,12 @@ module Iban
     end
 
     def bic bank_code
-      bank_db = Iban.configuration.bank_db.new bank_code
+      bank_db = Iban.configuration.bank_db.new(bank_code)
       bank_db.bic
     end
 
     def bank_name bank_code
-      bank_db = Iban.configuration.bank_db.new bank_code
+      bank_db = Iban.configuration.bank_db.new(bank_code)
       bank_db.bank_name
     end
 
